@@ -13,5 +13,47 @@
         android:layout_height="match_parent"/>
 
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/view001"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/img1"
+                android:background="@mipmap/ic_launcher"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/txt1"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="인터넷이 원활하지 않습니다. 다시 시도해주세요"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reflash"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@drawable/round_btn"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:text="새로고침"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
